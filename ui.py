@@ -19,7 +19,7 @@ class UI:
     def display_info(self):
         player_data = self.player.get_data()
 
-        # Balance and bet size
+        
         balance_surf = self.font.render("Balance: $" + player_data['balance'], True, TEXT_COLOR, None)
         x, y = 20, self.display_surface.get_size()[1] - 30
         balance_rect = balance_surf.get_rect(bottomleft = (x, y))
@@ -28,13 +28,13 @@ class UI:
         x = self.display_surface.get_size()[0] - 20
         bet_rect = bet_surf.get_rect(bottomright = (x, y))
 
-        # Draw player data
+       
         pygame.draw.rect(self.display_surface, False, balance_rect)
         pygame.draw.rect(self.display_surface, False, bet_rect)
         self.display_surface.blit(balance_surf, balance_rect)
         self.display_surface.blit(bet_surf, bet_rect)
 
-        # Print last win if applicable
+       
         if self.player.last_payout:
             last_payout = player_data['last_payout']
             win_surf = self.win_font.render("WIN! $" + last_payout, True, TEXT_COLOR, None)
