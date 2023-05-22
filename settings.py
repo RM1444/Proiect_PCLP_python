@@ -31,9 +31,9 @@ WIN_FONT_SIZE = 110
 
 # 4 Symbols for more wins
 symbols = {
-    'diamond': f"{SYM_PATH}/0_diamond.png", 
-    'floppy': f"{SYM_PATH}/0_floppy.png",
-    'hourglass': f"{SYM_PATH}/0_hourglass.png",
-    'hourglass2': f"{SYM_PATH}/0_hourglass.png",
-    'telephone': f"{SYM_PATH}/0_telephone.png"
+    'portocale': f"{SYM_PATH}/portocale.png", 
+    'cirese': f"{SYM_PATH}/cirese.png",
+    'struguri': f"{SYM_PATH}/struguri.png",
+    'sapte': f"{SYM_PATH}/sapte.png",
+    'pepeni': f"{SYM_PATH}/pepeni.png"
 }
