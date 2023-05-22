@@ -9,7 +9,7 @@ X_OFFSET, Y_OFFSET = 20, 0
 
 BG_IMAGE_PATH = 'graphics/0/bg.png'
 GRID_IMAGE_PATH = 'graphics/0/gridline.png'
-GAME_INDICES = [1, 2, 3] # 0 and 4 are outside of play area
+GAME_INDICES = [1, 2, 3] 
 SYM_PATH = 'graphics/0/symbols'
 
 
