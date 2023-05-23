@@ -18,7 +18,7 @@ class Game:
         self.delta_time = 0
 
         
-        main_sound = pygame.mixer.Sound('audio/jocuri-de-noroc-hit-2017.mp3')
+        main_sound = pygame.mixer.Sound('audio/audio_track.mp3')
         main_sound.play(loops = -1)
 
     def run(self):
