@@ -20,11 +20,11 @@ class UI:
         player_data = self.player.get_data()
 
         
-        balance_surf = self.font.render("Balance: $" + player_data['balance'], True, TEXT_COLOR, None)
+        balance_surf = self.font.render("Credit: $" + player_data['balance'], True, TEXT_COLOR, None)
         x, y = 20, self.display_surface.get_size()[1] - 30
         balance_rect = balance_surf.get_rect(bottomleft = (x, y))
 
-        bet_surf = self.bet_font.render("Wager: $" + player_data['bet_size'], True, TEXT_COLOR, None)
+        bet_surf = self.bet_font.render("Mana: $" + player_data['bet_size'], True, TEXT_COLOR, None)
         x = self.display_surface.get_size()[0] - 20
         bet_rect = bet_surf.get_rect(bottomright = (x, y))
 
@@ -37,7 +37,7 @@ class UI:
        
         if self.player.last_payout:
             last_payout = player_data['last_payout']
-            win_surf = self.win_font.render("WIN! $" + last_payout, True, TEXT_COLOR, None)
+            win_surf = self.win_font.render("Castig! $" + last_payout, True, TEXT_COLOR, None)
             x1 = 800
             y1 = self.display_surface.get_size()[1] - 60
             win_surf = pygame.transform.rotate(win_surf, self.win_text_angle)
