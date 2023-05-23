@@ -10,9 +10,9 @@ class UI:
             self.font, self.bet_font = pygame.font.Font(UI_FONT, UI_FONT_SIZE), pygame.font.Font(UI_FONT, UI_FONT_SIZE)
             self.win_font = pygame.font.Font(UI_FONT, WIN_FONT_SIZE)
         except:
-            print("Error loading font!")
-            print(f"Currently, the UI_FONT variable is set to {UI_FONT}")
-            print("Does the file exist?")
+            print("Probleme la incarcarea fontului!")
+            print(f"Momentan, variabila UI_FONT este la {UI_FONT}")
+            print("Exista fisierul?")
             quit()
         self.win_text_angle = random.randint(-4, 4)
 
