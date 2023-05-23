@@ -10,7 +10,7 @@ class Game:
        
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
-        pygame.display.set_caption('Slot Machine Demo')
+        pygame.display.set_caption('Pacanea')
         self.clock = pygame.time.Clock()
         self.bg_image = pygame.image.load(BG_IMAGE_PATH).convert_alpha()
         self.grid_image = pygame.image.load(GRID_IMAGE_PATH).convert_alpha()
